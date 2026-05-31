@@ -3,6 +3,7 @@ import { initScene, scene, camera } from './world/scene'
 import * as THREE from 'three'
 import {setEnv} from './world/envMap'
 import GlowCrystal from './world/glowCrystal'
+import Ribbons from './world/ribbons'
 import { setLight } from './world/light'
 
 
@@ -11,11 +12,12 @@ import { setLight } from './world/light'
   await initScene()
   camera.position.set(0,1,10)
 
-  const axesHelper = new THREE.AxesHelper(10)
-  scene.add(axesHelper)
+  // const axesHelper = new THREE.AxesHelper(10)
+  // scene.add(axesHelper)
 
   setLight()
-  setEnv()
+  // setEnv()
 
-  GlowCrystal()
+  // GlowCrystal()
+  Ribbons()
 })()
